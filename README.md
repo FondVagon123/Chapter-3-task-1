@@ -44,6 +44,7 @@ pandas, numpy – для роботи з даними
 Проведено оцінку ефективності: точність (Accuracy), матриця помилок (Confusion Matrix), precision, recall, F1-score.
 
 2. Код програми
+
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_iris
@@ -107,8 +108,10 @@ print("\nДетальний звіт по класифікації:")
 print(metrics.classification_report(y_test, y_pred, target_names=target_names))
 
 
-3. Результати виконання роботи
 
+
+3. Результати виконання роботи
+<img width="851" height="581" alt="изображение" src="https://github.com/user-attachments/assets/42f59f4c-3e67-4ebf-a231-46e21da7495f" />
 Рисунок 1. Графічна візуалізація дерева рішень
 Показано структуру побудованого дерева:
 
@@ -122,6 +125,16 @@ value: розподіл за класами
 
 class: домінуючий клас
 
+
+
+
+
+
+
+
+<img width="411" height="691" alt="изображение" src="https://github.com/user-attachments/assets/6ff1ddbb-6379-4446-99ea-998364639b93" />
+
+
 Рисунок 2. Консольний вивід
 Основні результати:
 
@@ -132,6 +145,8 @@ class: домінуючий клас
 Матриця помилок: лише одна помилка з 45 тестових зразків
 
 Високі значення precision та recall для всіх класів
+
+
 
 4. Висновки
 
@@ -148,3 +163,11 @@ class: домінуючий клас
 Досягнуто точності 98% на тестовому наборі
 
 Модель продемонструвала високу узагальнюючу здатність та надійність класифікації.
+
+
+
+
+Автор: Кіриченко Кіріл, Сидоров Нікіта
+Завдання: Побудова дерева рішень (Decision Tree Classifier)
+Мова: Python 3
+Бібліотеки: scikit-learn, matplotlib, pandas
